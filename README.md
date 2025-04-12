@@ -27,8 +27,6 @@ A simple and extensible RSVP management module built with **Angular**, designed 
 
 ## 🧩 Project Structure
 
-### 🧩 Project Structure
-
 ```text
 rsvp-manager/
 └── src/
