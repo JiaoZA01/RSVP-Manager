@@ -27,28 +27,32 @@ A simple and extensible RSVP management module built with **Angular**, designed 
 
 ## 🧩 Project Structure
 
-rsvp-manager/
-  src/
-    app/
-      components/
-        rsvp/
-          - rsvp.component.ts         # Handles player input and status updates using RsvpService
-        rsvp-list/
-          - rsvp-list.component.ts    # Displays RSVP entries and emits status change events
-      models/
-        - player.interface.ts         # Defines Player<T> interface with optional metadata
-        - rsvp.interface.ts           # Defines RsvpEntry and RsvpCounts interfaces
-        - rsvp-status.enum.ts         # Enum representing RSVP status: Yes, No, Maybe
-      services/
-        - rsvp.service.ts             # Core logic for adding, updating, and querying RSVP entries
-        - id.service.ts               # Provides unique ID generation for new players
-        - storage.service.ts          # Wraps localStorage access for persistence
-        - logger.interface.ts         # Logger interface for pluggable logging
-        - logger.token.ts             # Angular DI token for injecting a logger
-        - console-logger.ts           # Simple logger that prints messages to the browser console
-  setup-jest.ts                       # Jest environment setup file
-  README.md                           # Project overview and usage instructions
+### 🧩 Project Structure
 
+```text
+rsvp-manager/
+└── src/
+    └── app/
+        ├── components/
+        │   ├── rsvp/
+        │   │   └── rsvp.component.ts         # Handles player input and status updates using RsvpService
+        │   └── rsvp-list/
+        │       └── rsvp-list.component.ts    # Displays RSVP entries and emits status change events
+        ├── models/
+        │   ├── player.interface.ts           # Defines Player interface with optional metadata
+        │   ├── rsvp.interface.ts             # Defines RsvpEntry and RsvpCounts interfaces
+        │   └── rsvp-status.enum.ts           # Enum representing RSVP status: Yes, No, Maybe
+        └── services/
+            ├── rsvp.service.ts               # Core logic for adding, updating, and querying RSVP entries
+            ├── id.service.ts                 # Provides unique ID generation for new players
+            ├── storage.service.ts            # Wraps localStorage access for persistence
+            ├── logger.interface.ts           # Logger interface for pluggable logging
+            ├── logger.token.ts               # Angular DI token for injecting a logger
+            └── console-logger.ts             # Simple logger that prints messages to the browser console
+
+setup-jest.ts                                  # Jest environment setup file for unit testing
+README.md                                      # Project overview and usage instructions
+```
 
 ---
 
